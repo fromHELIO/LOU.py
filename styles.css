@@ -1,0 +1,622 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-family: 'Unbounded';
+}
+
+/*  menu bar css */
+
+.menu-btn {
+    width: 5%;
+    max-width: 40px;
+    position: fixed;
+    right: 2px;
+    top: 2px;
+    transition: transform 150ms ease-in-out;
+}
+
+.menu-btn:hover {
+    transform: scale(1.2);
+}
+
+.menu-bar {
+    background-color: #C5ECC7;
+    width: 100%;
+    height: 50px;
+    position: fixed;
+    top: 0;
+}
+
+.menu-bar li {
+    transition: transform 150ms ease-in-out;
+    transition: font-weight 150ms ease-in-out;
+}
+
+.menu-bar li:hover {
+    transform: scale(1.1);
+    font-weight: 800;
+}
+
+.close-btn {
+    width: 2vw;
+    position: absolute;
+    right: 9px;
+    transition: transform 150ms ease-in-out;
+}
+
+.close-btn:hover {
+    transform: scale(1.2);
+}
+
+.menu-nav {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 13px;
+    column-gap: 1vw;
+}
+
+.menu-nav a {  
+    text-decoration: none;
+    color: #03241C;
+    font-family: 'Unbounded';
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.mobile-tablet {
+    display: none;
+}
+
+/* home section css */
+
+.home {
+    background: linear-gradient(270deg, rgba(41, 68, 62, 0.27) 0%, rgba(17, 48, 41, 0.72) 39%, #03241C 90.5%), url(images/bg_home.png);
+    background-size: cover;
+    height: 100vh;
+}
+
+.subheading {
+    width: 30vw;
+    max-width: 500px;
+    margin: 30px 0 0 50px;
+}
+
+.main_content {
+    clear: both;
+}
+
+#main_logo {
+    position: absolute;
+    right: 0;
+    bottom: 90px;
+    width: 65%;
+    max-width: 800px;
+}
+
+.home-nav {
+    font-family: 'Urbanist';
+    font-size: min(3.5vw, 36px);
+    font-weight: 300;
+    line-height: 120.12%;
+    text-transform: uppercase;
+    list-style-type: none;
+    position: absolute;
+    left: 50px;
+    bottom: 70px;
+}
+
+.home-nav li {
+    margin: 30px;
+    transition: color 200ms ease-in-out;
+    transition: font-weight 200ms ease-in-out;
+    transition: transform 200ms ease-in-out;
+}
+
+.home-nav li:hover {
+    color: #6DAE7F;
+    font-weight: 800;
+    transform: scale(1.1)
+}
+
+.home-nav a {
+    text-decoration: none;
+    color: rgba(246, 253, 250, 0.55);
+}
+
+/* about section css */
+
+.about {
+    background: url(images/bg_about.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    padding: 0 50px 50px 0;
+}
+
+
+.pic {
+    width: 30vw;
+    max-width: 325px;
+}
+
+.name {
+    width: 75%;
+    max-width: 900px;
+    position: absolute;
+    right: 0;
+}
+
+.about_content {
+    margin-top: 50px;
+}
+
+.video {
+    float: right;
+    border-radius: 25px;
+    width: 50vw;
+    max-width: 600px;
+    height: 45vh;
+    max-height: 600px;
+    margin: 20px;
+}
+
+.about ul {
+    list-style-type: '✶';
+    color: #C5ECC7;
+    font-family: 'Urbanist';
+    font-size: min(2.5vw, 30px);
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: -0.06025rem;
+    margin-left: 50px;
+    padding-top: 100px;
+    padding-left: 50px;
+}
+
+.about p {
+    color: #C5ECC7;
+    text-align: justify;
+    font-family: 'Urbanist';
+    font-size: min(2vw);
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    letter-spacing: -0.075rem;
+    clear: both;
+    margin-left: 50px;
+}
+
+/* projects section css */
+
+.projects {
+    background: linear-gradient(0deg, #6DAE7F 58.03%, rgba(109, 175, 128, 0.47) 100%), url(images/bg_projects.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    padding-bottom: 30px;
+}
+
+.projects img {
+    width: 60%;
+    max-width: 500px;
+    margin-top: 50px;
+}
+
+
+.projects_content {
+    display: flex;
+    align-items: center;
+    margin: 50px 100px 0 100px;
+    gap: 20%;
+}
+
+#proj_list {
+    list-style-type: none;
+    text-align: center;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+}
+
+#proj_list li {
+    width: 150%;
+    max-width: 400px;
+    border-radius: 2.46888rem;
+    background: #C5ECC7;
+    padding: 10px;
+    color: #0D3125;
+    font-family: 'Unbounded';
+    font-size: min(1.6vw, 20px);
+    font-weight: 800;
+    letter-spacing: -0.04125rem;
+    text-transform: uppercase;
+    transition: color 200ms ease-in-out;
+    transition: background 200ms ease-in-out;
+    transition: transform 200ms ease-in-out;
+}
+
+#proj_list li:hover {
+    background: #03241C;
+    color: #A0D2A9;
+    transform: scale(1.1);
+}
+
+.description {
+    width: 75%;
+    max-width: 900px;
+    vertical-align: middle;
+}
+
+.description h3 {
+    color: #03241C;
+    text-align: justify;
+    font-family: 'Urbanist';
+    font-size: min(2.5vw, 36px);
+    font-style: italic;
+    font-weight: 900;
+    letter-spacing: -0.0795rem;
+    text-transform: uppercase;
+}
+
+.description p {
+    color: #C5ECC7;
+    text-align: justify;
+    font-family: Urbanist;
+    font-size: min(3vw, 36px);
+    font-weight: 300;
+    letter-spacing: -0.08244rem;
+    overflow: auto;
+}
+
+.description a div {
+    border-radius: 2.80481rem;
+    background: #03241C;
+    width: 75%;
+    max-width: 10rem;
+    height: 2rem;
+    padding: 9px 4px 4px 4px;
+}
+
+.description h4 {
+    color: #A0D2A9;
+    text-align: center;
+    font-family: 'Unbounded';
+    font-size: min(2.5vw, 20px);
+    font-weight: 800;
+    letter-spacing: -0.05181rem;
+}
+
+.description a {
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    transition: transform 200ms ease-in-out;
+}
+
+.description a:hover {
+    transform: scale(1.1);
+}
+
+#pms, #tournament, #bms, #snake {
+    display: none;
+}
+
+/* contact section css */
+
+.contact {
+    background: linear-gradient(90deg, rgba(246, 253, 250, 0.05) 0%, rgba(246, 253, 250, 0.50) 100%), url(images/bg_contact.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    overflow: hidden;
+    padding-top: 30px;
+}
+
+#contact_header {
+    margin-left: 5px;
+    color: #F6FDFA;
+    font-family: 'Unbounded';
+    font-size: 3.67681rem;
+    font-weight: 800;
+    letter-spacing: -0.22063rem;
+}
+
+.contact_content {
+    display: flex;
+    justify-content: center;
+    gap: 10%;
+    margin: 150px 2% 0 2%;
+}
+
+.form {
+    padding: 34px;
+    width: 20rem;
+    height: 22rem;
+    flex-shrink: 0;
+    border-radius: 5.1625rem;
+    background: #0D3025;
+}
+
+.form * {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.form h1 {
+    text-transform: uppercase;
+    color: #C5ECC7;
+    text-align: center;
+    font-family: Unbounded;
+    font-size: 3rem;
+    font-weight: 800;
+    letter-spacing: -0.234rem;
+    margin-bottom: 15px;
+}
+
+.form textarea {
+    border-radius: 15px;
+    padding: 10px;
+    color: rgba(13, 48, 37);
+    font-family: 'Urbanist';
+    text-align: left;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.form #submit {
+    width: 110px;
+    height: 45px;
+    margin-top: 23px;
+    display: block;
+    border-radius: 2.896rem;
+    opacity: 0.91;
+    background: #C5ECC7;
+    color: #0D3025;
+    text-align: center;
+    font-family: 'Unbounded';
+    font-size: 1.5rem;
+    font-weight: 800;
+    line-height: normal;
+    border: none;
+    transition: transform 200ms ease-in-out;
+}
+
+.form #submit:hover {
+    transform: scale(1.1);
+}
+
+table {
+    width: 25rem;
+    text-align: center;
+    background-color: #C5ECC7;
+    border-radius: 20px;
+    border-collapse: collapse;
+}
+
+table td {
+    font-family: 'Urbanist';
+    color: #0D3025;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+td img {
+    width: 30px;
+}
+
+table td, table th {
+    padding: 8px 9px;
+  
+}
+
+table tr:nth-child(even) {
+    background: #6EAF80;
+}
+
+  
+table td:nth-child(even) {
+    background: rgba(13, 48, 37, 0.11);
+}
+  
+table thead {
+    background: #0D3025;  
+}
+  
+table thead th {
+    font-family: 'Unbounded';
+    color: #C5ECC7;
+    font-weight: 700;
+    text-align: center;
+}
+
+th:nth-child(1) {
+    border-top-left-radius: 20px;
+}
+
+th:nth-child(3) {
+    border-top-right-radius: 20px;
+}
+
+
+/* footer css */
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    max-height: 50px;
+    background: #F6FDFA;
+}
+
+footer p {
+    padding: .8rem 0 0 5px;
+    color: #0D3025;
+    text-align: justify;
+    font-family: 'Urbanist';
+    font-size: 1.15rem;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    letter-spacing: -0.10344rem;
+}
+
+footer img {
+    width: 30px;
+    padding: 10px 0;
+    transition: transform 150ms ease-in-out;
+}
+
+footer img:hover {
+    transform: scale(1.2);
+}
+
+footer img:last-of-type {
+    padding-right: 10px;
+}
+
+/* tablet viewport */
+
+@media only screen and (max-width:991px) {
+
+    .mobile-tablet {
+        display: block;
+    }
+
+    .menu-bar {
+        display: none;
+    }
+
+    .projects_content {
+        gap: 200px;
+    }
+
+    .contact {
+        background-size:cover;
+        height: 100%;
+        padding-bottom: 70px;
+    }
+
+    .contact_content {
+        flex-direction: column;
+    }
+
+    .form, .table {
+        margin: 0 auto;
+    }
+
+    .table {
+        position: inherit;
+        margin-top: 50px;
+    }
+} 
+
+/* mobile viewport */
+
+@media only screen and (max-width:600px) {
+
+    /* mobile home section */
+
+    .subheading {
+        width: 60%;
+    }
+
+    #main_logo {
+        bottom: 0;
+    }
+
+    .home-nav {
+        left: 10px;
+        bottom: 300px;
+    }
+
+    .home-nav li {
+        font-size: 5vw;
+    }
+
+    /* mobile about section */
+
+    .about {
+        display: block;
+    }
+
+    .about_content {
+        margin-top: 10px;
+    }
+
+    .video {
+        width: 80vw;
+        height: 30vh;
+        margin-left: -10px;
+        margin-right: -10px;
+    }
+
+    .skills {
+        margin-bottom: 30px;
+    }
+
+    .skills li {
+        font-size: 15px;
+    }
+
+    .about p {
+        font-size: 20px;
+    }
+
+    /* mobile projects section */
+    .projects {
+        height: 100%;
+    }
+
+    .projects_content {
+        width: 100%;
+        display: block;
+        margin: 0 auto;
+    }
+
+    #proj_list {
+        margin: 30px 50px;
+    }
+
+    #proj_list li {
+        font-size: 3vw;
+    }
+
+    .description {
+        margin: 50px;
+    }
+
+    .description h3, .description p, .description h4 {
+        font-size: 20px;
+    }
+
+    /* mobile contact section */
+
+    .contact {
+        padding-bottom: 10%;
+    }
+
+    .contact_content {
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+    }
+
+}

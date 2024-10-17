@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale-1.0"/>
+        <meta name="description" content="Lou.py is a personal portfolio that showcases the owner's traits, projects, and contanct information.">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@200..900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles.css" type="text/css">
+        <title>Lou.py</title>
+    </head>
+    <body>
+        <div class="home">
+            <img src="images/subheading.png" alt="A portfolio of progress" class="subheading">
+            <div class="main_content">
+                <img id="main_logo" src="images/logo_full_green.png" alt="Lou.py logo in full and colored green">
+                <ul class="home-nav">
+                    <a href="#about"><li>About Me</li></a>
+                    <a href="#projects"><li>Projects</li></a>
+                    <a href="#contact"><li>Contact Me</li></a>
+                </ul>
+                <div class="mobile-tablet">
+                    <img src="images/menu_btn.png" alt="open menu" class="menu-btn" id="menu-btn" onclick="showMenu()">
+                    <div class="menu-toggle">
+                        <div class="menu-bar" id="menu-bar">
+                            <ul class="menu-nav">
+                                <a href="#about"><li>About Me</li></a>
+                                <a href="#projects"><li>Projects</li></a>
+                                <a href="#contact"><li>Contact Me</li></a>
+                                <img src="images/x_btn.png" alt="close menu" class="close-btn" id="close-btn" onclick="closeMenu()">
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="about" id="about">
+            <div class="heading-imgs">
+                <img src="images/lou_pic.png" alt="Picture of Eina Ruiz" class="pic">
+                <img src="images/name.png" alt="Eina Ruiz" class="name">
+                
+            </div>
+            <div class="about_content">
+                <iframe class="video"
+                src="https://www.youtube.com/embed/2P6v7PgXx3Y?si=Fy888994hiVbU8Qv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <ul class="skills">
+                    <li>Python, Java, HTML/CSS</li>
+                    <li>CompTIA ITF+ Certified</li>
+                    <li>FCC Responsive Web Design Certified</li>
+                    <li>Effective Communicator</li>
+                </ul>
+
+                <p>
+                    With a robust foundation in Python, Java, and Web Design, I bring a comprehensive skill set to the table, bolstered by strong interpersonal communication and leadership abilities. My journey in tech has been marked by a deep commitment to crafting efficient, scalable solutions and delivering engaging, user-centered web experiences.
+                    <br><br>
+                    In Python, I leverage its versatility to build robust applications, from data analysis tools to automation scripts, streamlining complex processes and enhancing productivity. My proficiency in Java enables me to develop high-performance, cross-platform applications, focusing on reliability and maintainability. Complementing these technical skills, my expertise in Web Design ensures that I create intuitive, visually compelling interfaces that enhance user engagement and satisfaction.
+                    <br><br>
+                    Beyond my technical acumen, I excel in interpersonal communication and leadership. I am adept at fostering collaborative environments, facilitating clear and effective dialogue across teams, and guiding projects from inception to successful completion. My leadership style is rooted in empathy and empowerment, driving both individual growth and collective success.</p>
+            </div>
+        </div>
+        <div class="projects" id="projects">
+            <img src="images/projects_heading.png" alt="projects">
+            <div class="projects_content">
+                <ul id="proj_list">
+                    <li onclick="descShowOMS()">Order Management System</li>
+                    <li onclick="descShowPMS()">Product Management System</li>
+                    <li onclick="descShowTOURN()">Tournament Player/Audience System</li>
+                    <li onclick="descShowBMS()">Budget Management System</li>
+                    <li onclick="descShowSNAKE()">Snake Game</li>
+                </ul>
+                <div class="description" id="oms">
+                    <h3>Project Description</h3>
+                    <p>A java-based program designed for managing orders. It features smooth and quality taking of orders and storage capability. It also allows for seamless manipulation of received data post-order.</p>
+                    <a href="https://hauph-my.sharepoint.com/:f:/g/personal/emruiz_student_hau_edu_ph/EmlcSrq1BSdPkWo_OfqW0KkBtWlRC22Xs-wPweXDUQgOSw?e=zYBAKO" target="_blank"><div><h4>RUN HERE</h4></div></a>
+                </div>
+                <div class="description" id="pms">
+                    <h3>Project Description</h3>
+                    <p>A java-based program designed for managing products. Add, delete, and update product listings store in CSV files for smooth file retrieval. Utilizes creative ASCII designs to enhance user experience.</p>
+                    <a href="https://hauph-my.sharepoint.com/:f:/g/personal/emruiz_student_hau_edu_ph/EiREecEbKb5Kpv5tZJjM5vgB6H4RoLgdDoEgo5BlOwVn9Q?e=PUOot0"><div><h4>RUN HERE</h4></div></a>
+                </div>
+                <div class="description" id="tournament">
+                    <h3>Project Description</h3>
+                    <p>A program built with Python that allows player enlistment and audience ticketing in a single place. CSV storage and Python's powerful data capabilities combine to create a powerful yet intuitive system.</p>
+                    <a href="https://hauph-my.sharepoint.com/:f:/g/personal/emruiz_student_hau_edu_ph/Evxz2hbPv8tEl8R81KP1vB8BER0HKGuMSg6abXZzzNKcQQ?e=GMh8Zt"><div><h4>RUN HERE</h4></div></a>
+                </div>
+                <div class="description" id="bms">
+                    <h3>Project Description</h3>
+                    <p>A program designed to assist in managing your budget and built with Python. Get a better hold of your finances through assistive suggestions and data visualization.</p>
+                    <a href="https://hauph-my.sharepoint.com/:f:/g/personal/emruiz_student_hau_edu_ph/Ej8QEqUQ6dRAoMIMaZlF-QYB8x-Q8EHhyisJ2a0ZAF63LQ?e=39zGKp"><div><h4>RUN HERE</h4></div></a>
+                </div>
+                <div class="description" id="snake">
+                    <h3>Project Description</h3>
+                    <p>My take on the classic Nokia Snake Game by Taneli Armanto. Through Python and its libraries, a functional pc emulation of snake's timeless gameplay is at your fignertips.</p>
+                    <a href="https://hauph-my.sharepoint.com/:f:/g/personal/emruiz_student_hau_edu_ph/EljXDDVkkgtGifJrKF4d-LcBd_uH18NxAbFE3xg0P7wYeA?e=EdTt3U"><div><h4>RUN HERE</h4></div></a>
+                </div>
+            </div>
+        </div>
+        <div class="contact" id="contact">
+            <h1 id="contact_header">CONTACT ME</h1>
+            <div class="contact_content">
+                <div class="form">
+                    <h1>Send me a message!</h1>
+                    <form>
+                        <textarea rows="7" cols="30" placeholder="Hi! I have a question about..."></textarea>
+                        <input type="submit" value="SEND" id="submit">
+                    </form>
+                </div>
+                <div class="table">
+                    <table id="contact_table">
+                        <thead>
+                            <tr>
+                                <th>Day of the Week</th>
+                                <th>Available Hours</th>
+                                <th>In-Person Consultation</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>MONDAY</td>
+                                <td>9:00 AM - 3:00 PM</td>
+                                <td valign="middle" align="center"><img src="images/checkmark.png" alt=""></td>
+                            </tr>
+                            <tr>
+                                <td>TUESDAY</td>
+                                <td>9:00 AM - 12:00 PM</td>
+                                <td valign="middle" align="center"><img src="images/checkmark.png" alt=""></td>
+                            </tr>
+                            <tr>
+                                <td>WEDNESDAY</td>
+                                <td>11:00 AM - 5:00 PM</td>
+                                <td valign="middle" align="center"><img src="images/checkmark.png" alt=""></td>
+                            </tr>
+                            <tr>
+                                <td>THURSDAY</td>
+                                <td>1:00 PM - 5:00 PM</td>
+                                <td valign="middle" align="center"><img src="images/checkmark.png" alt=""></td>
+                            </tr>
+                            <tr>
+                                <td>FRIDAY</td>
+                                <td>1:00 PM - 5:00 PM</td>
+                                <td valign="middle" align="center"><img src="images/xmark.png" alt=""></td>
+                            </tr>
+                            <tr>
+                                <td>SATURDAY</td>
+                                <td>1:00 PM - 3:00 PM</td>
+                                <td valign="middle" align="center"><img src="images/xmark.png" alt=""></td>
+                            </tr>
+                            <tr>
+                                <td>SUNDAY</td>
+                                <td>Rest Day!</td>
+                                <td valign="middle" align="center"><img src="images/xmark.png" alt=""></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <p>© 2024. Eina Loux Ruiz. All Rights Reserved.</p>
+            <div class="social_medias">
+                <a href="https://github.com/fromHELIO" target="_blank"><img src="images/github.png" alt="link to my github"></a>
+                <a href="https://x.com/taintdsun" target="_blank"><img src="images/x.png" alt="link to my twitter"></a>
+                <a href="https://www.linkedin.com/in/eina-loux-ruiz-761947291/?originalSubdomain=ph" target="_blank"><img src="images/linkedin.png" alt="link to my linkedin"></a>
+                <a href="https://hauph-my.sharepoint.com/:i:/g/personal/emruiz_student_hau_edu_ph/EXwENZA0woNMkksCLDiJ9ygBA1lzZpQnFlEzjwJp1SPJqg?e=QfhOEy" target="_blank"><img src="images/telegram.png" alt="link to my telegram"></a>
+            </div>
+        </footer>
+    </body>
+    <script src="main.js"></script>
+</html>
