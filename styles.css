@@ -619,4 +619,14 @@ footer img:last-of-type {
         gap: 50px;
     }
 
+    /* mobile footer */
+
+    footer p {
+        font-size: 3vw;
+    }
+
+    footer img {
+        width: 5vw;
+    }
+
 }
